@@ -14,7 +14,9 @@
 		F95C90E51EBDFC3B00A8FAED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F95C90DC1EBDFC3B00A8FAED /* Assets.xcassets */; };
 		F95C90E61EBDFC3B00A8FAED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F95C90DD1EBDFC3B00A8FAED /* LaunchScreen.storyboard */; };
 		F95C90E71EBDFC3B00A8FAED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F95C90DF1EBDFC3B00A8FAED /* Main.storyboard */; };
-		F95C90E81EBDFC3B00A8FAED /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F95C90E11EBDFC3B00A8FAED /* Info.plist */; };
+		F95C90ED1EBE00B200A8FAED /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C90EC1EBE00B200A8FAED /* MapViewController.swift */; };
+		F95C90F11EBE06EE00A8FAED /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C90F01EBE06EE00A8FAED /* MapView.swift */; };
+		F95C90F31EBF66AB00A8FAED /* UserLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C90F21EBF66AB00A8FAED /* UserLocationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,9 @@
 		F95C90DE1EBDFC3B00A8FAED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F95C90E01EBDFC3B00A8FAED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F95C90E11EBDFC3B00A8FAED /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F95C90EC1EBE00B200A8FAED /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F95C90F01EBE06EE00A8FAED /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		F95C90F21EBF66AB00A8FAED /* UserLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +139,7 @@
 		F95C90D91EBDFC3B00A8FAED /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				F95C90E91EBE006300A8FAED /* MapView */,
 				F95C90DA1EBDFC3B00A8FAED /* Shared */,
 			);
 			path = Application;
@@ -163,6 +169,16 @@
 			children = (
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		F95C90E91EBE006300A8FAED /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				F95C90EC1EBE00B200A8FAED /* MapViewController.swift */,
+				F95C90F01EBE06EE00A8FAED /* MapView.swift */,
+				F95C90F21EBF66AB00A8FAED /* UserLocationView.swift */,
+			);
+			path = MapView;
 			sourceTree = "<group>";
 		};
 		F9D7086D341B9DE59EB95B78 /* Frameworks */ = {
@@ -265,7 +281,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F95C90E81EBDFC3B00A8FAED /* Info.plist in Resources */,
 				F95C90E71EBDFC3B00A8FAED /* Main.storyboard in Resources */,
 				F95C90E51EBDFC3B00A8FAED /* Assets.xcassets in Resources */,
 				F95C90E61EBDFC3B00A8FAED /* LaunchScreen.storyboard in Resources */,
@@ -379,7 +394,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F95C90F31EBF66AB00A8FAED /* UserLocationView.swift in Sources */,
 				F95C90E41EBDFC3B00A8FAED /* AppDelegate.swift in Sources */,
+				F95C90F11EBE06EE00A8FAED /* MapView.swift in Sources */,
+				F95C90ED1EBE00B200A8FAED /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +539,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X4S5YE2LML;
 				INFOPLIST_FILE = "$(SRCROOT)/TestCP/Application/Shared/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chlebta.TestCP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -535,6 +554,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X4S5YE2LML;
 				INFOPLIST_FILE = "$(SRCROOT)/TestCP/Application/Shared/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chlebta.TestCP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
