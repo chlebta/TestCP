@@ -26,8 +26,24 @@ class MapboxGeoCoderHelper {
                 completionHanlder?(nil, error)
 
             }
-
         }
+    }
+    
+    static func geoCode( _ coordinates: CLLocationCoordinate2D, _ completionHanlder: geoCodeResult? = nil) {
         
+        let geocoder = Geocoder.shared
+        let options = ReverseGeocodeOptions(coordinate: coordinates)
+        
+        let task = geocoder.geocode(options) { (placemarks, attribution, error) in
+            guard let placemark = placemarks?.first else {
+                completionHanlder?(nil, error)
+                return
+            }
+            
+            let place = Place(name: placemark.name, longName: placemark.qualifiedName, latitude: placemark.location.coordinate.latitude, longitude: placemark.location.coordinate.longitude)
+            
+            completionHanlder?([place], nil)
+            
+        }
     }
 }

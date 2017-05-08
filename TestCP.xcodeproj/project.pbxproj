@@ -22,6 +22,7 @@
 		F95C91061EC0841D00A8FAED /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C91051EC0841D00A8FAED /* ApiManager.swift */; };
 		F95C91081EC084E200A8FAED /* MapboxGeoCoderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C91071EC084E200A8FAED /* MapboxGeoCoderHelper.swift */; };
 		F95C910C1EC0860F00A8FAED /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C910B1EC0860F00A8FAED /* Place.swift */; };
+		F95C910E1EC1100B00A8FAED /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C910D1EC1100B00A8FAED /* CustomAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		F95C91051EC0841D00A8FAED /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		F95C91071EC084E200A8FAED /* MapboxGeoCoderHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxGeoCoderHelper.swift; sourceTree = "<group>"; };
 		F95C910B1EC0860F00A8FAED /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		F95C910D1EC1100B00A8FAED /* CustomAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 				F95C90EC1EBE00B200A8FAED /* MapViewController.swift */,
 				F95C90F01EBE06EE00A8FAED /* MapView.swift */,
 				F95C90F21EBF66AB00A8FAED /* UserLocationView.swift */,
+				F95C910D1EC1100B00A8FAED /* CustomAnnotationView.swift */,
 			);
 			path = MapView;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				F95C90FC1EC0712900A8FAED /* AppDelegate.swift in Sources */,
 				F95C91061EC0841D00A8FAED /* ApiManager.swift in Sources */,
 				F95C91081EC084E200A8FAED /* MapboxGeoCoderHelper.swift in Sources */,
+				F95C910E1EC1100B00A8FAED /* CustomAnnotationView.swift in Sources */,
 				F95C90ED1EBE00B200A8FAED /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

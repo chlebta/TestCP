@@ -30,6 +30,6 @@ class MapViewController: UIViewController {
 //MARK:
 extension MapViewController: SearchTextFieldDelegate {
     func didSelectPlace(_ place: Place) {
-        mapView.addPin(place)
+        mapView.updateDestinationPin(place)
     }
 }

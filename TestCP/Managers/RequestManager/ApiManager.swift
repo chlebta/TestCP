@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import CoreLocation
 
 typealias geoCodeResult = (_ books: [Place]?, _ error: Error?) -> Void
 
@@ -16,5 +17,8 @@ class ApiManager {
         MapboxGeoCoderHelper.geoCode(address, withCompletion)
     }
     
+    static func geoCodeThis( _ location: CLLocationCoordinate2D,  withCompletion: geoCodeResult? = nil) {
+        MapboxGeoCoderHelper.geoCode(location, withCompletion)
+    }
     
 }
