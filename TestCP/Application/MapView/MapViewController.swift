@@ -19,9 +19,17 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        searchTextField?.searchDelegate = self
         mapView = MapView(frame: view.bounds)
         view.insertSubview(mapView, belowSubview: searchTextField)
     }
 
 
+}
+
+//MARK:
+extension MapViewController: SearchTextFieldDelegate {
+    func didSelectPlace(_ place: Place) {
+        mapView.addPin(place)
+    }
 }

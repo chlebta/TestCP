@@ -19,6 +19,9 @@
 		F95C90FF1EC0712900A8FAED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F95C90F91EC0712900A8FAED /* Main.storyboard */; };
 		F95C91001EC0712900A8FAED /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F95C90FB1EC0712900A8FAED /* Info.plist */; };
 		F95C91031EC0716D00A8FAED /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C91021EC0716D00A8FAED /* SearchTextField.swift */; };
+		F95C91061EC0841D00A8FAED /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C91051EC0841D00A8FAED /* ApiManager.swift */; };
+		F95C91081EC084E200A8FAED /* MapboxGeoCoderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C91071EC084E200A8FAED /* MapboxGeoCoderHelper.swift */; };
+		F95C910C1EC0860F00A8FAED /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C910B1EC0860F00A8FAED /* Place.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		F95C90FA1EC0712900A8FAED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F95C90FB1EC0712900A8FAED /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F95C91021EC0716D00A8FAED /* SearchTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
+		F95C91051EC0841D00A8FAED /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		F95C91071EC084E200A8FAED /* MapboxGeoCoderHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxGeoCoderHelper.swift; sourceTree = "<group>"; };
+		F95C910B1EC0860F00A8FAED /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +141,7 @@
 		F95C90D81EBDFC3B00A8FAED /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F95C910B1EC0860F00A8FAED /* Place.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -159,6 +166,7 @@
 		F95C90E31EBDFC3B00A8FAED /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				F95C91041EC0840F00A8FAED /* RequestManager */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -191,6 +199,15 @@
 				F95C91021EC0716D00A8FAED /* SearchTextField.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		F95C91041EC0840F00A8FAED /* RequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				F95C91051EC0841D00A8FAED /* ApiManager.swift */,
+				F95C91071EC084E200A8FAED /* MapboxGeoCoderHelper.swift */,
+			);
+			path = RequestManager;
 			sourceTree = "<group>";
 		};
 		F9D7086D341B9DE59EB95B78 /* Frameworks */ = {
@@ -410,7 +427,10 @@
 				F95C91031EC0716D00A8FAED /* SearchTextField.swift in Sources */,
 				F95C90F31EBF66AB00A8FAED /* UserLocationView.swift in Sources */,
 				F95C90F11EBE06EE00A8FAED /* MapView.swift in Sources */,
+				F95C910C1EC0860F00A8FAED /* Place.swift in Sources */,
 				F95C90FC1EC0712900A8FAED /* AppDelegate.swift in Sources */,
+				F95C91061EC0841D00A8FAED /* ApiManager.swift in Sources */,
+				F95C91081EC084E200A8FAED /* MapboxGeoCoderHelper.swift in Sources */,
 				F95C90ED1EBE00B200A8FAED /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

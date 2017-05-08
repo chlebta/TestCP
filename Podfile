@@ -7,6 +7,8 @@ target 'TestCP' do
 
   # Pods for TestCP
   pod 'Mapbox-iOS-SDK'
+  pod 'MapboxGeocoder.swift'
+  
   pod 'Cartography'
 
 

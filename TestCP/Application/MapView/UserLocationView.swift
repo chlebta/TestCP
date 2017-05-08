@@ -33,5 +33,6 @@ class UserLocationView: MGLUserLocationAnnotationView {
         layer.contentsGravity = kCAGravityCenter
         layer.contents = UIImage(named: "pin")?.cgImage
         
+        
     }
 }

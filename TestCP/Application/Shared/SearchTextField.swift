@@ -11,14 +11,14 @@ import Cartography
 
 
 protocol SearchTextFieldDelegate {
-    func didSelectObject(_ object: String)
+    func didSelectPlace(_ place: Place)
 }
 
 
 class SearchTextField: UITextField {
     
     fileprivate var tableView:UITableView?
-    fileprivate var searchResult: [String] =  ["Hello", "Alli", "Lets", "Play"]
+    fileprivate var places: [Place] = []
     
     var searchDelegate: SearchTextFieldDelegate?
     
@@ -131,7 +131,7 @@ extension SearchTextField: UITextFieldDelegate {
 extension SearchTextField: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return searchResult.count == 0 ? 1 : searchResult.count
+        return places.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -140,7 +140,8 @@ extension SearchTextField: UITableViewDataSource, UITableViewDelegate {
         
         cell.selectionStyle             = .none
         cell.textLabel?.textAlignment   = .left
-        cell.textLabel?.text = searchResult[indexPath.row]
+        cell.textLabel?.numberOfLines   = 2
+        cell.textLabel?.text = places[indexPath.row].longName
         
         return cell
     }
@@ -148,8 +149,10 @@ extension SearchTextField: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         //inform the delegate
-        self.searchDelegate?.didSelectObject(searchResult[indexPath.row])
-        
+        let place = places[indexPath.row]
+        self.text = place.name
+
+        self.searchDelegate?.didSelectPlace(place)
         //Hide result
         tableView.isHidden = true
         self.endEditing(true)
@@ -161,6 +164,13 @@ extension SearchTextField: UITableViewDataSource, UITableViewDelegate {
 //MARK: API calls
 extension SearchTextField {
     fileprivate func getDataFor(_ string: String) {
-        
+        if string.characters.count > 4 {
+            ApiManager.geoCodeThis(string, withCompletion: { (result, error) in
+                if let places = result {
+                    self.places = places
+                    self.tableView?.reloadData()
+                }
+            })
+        }
     }
 }

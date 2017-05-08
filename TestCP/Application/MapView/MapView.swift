@@ -13,6 +13,8 @@ class MapView: UIView {
     
     fileprivate let userAnnoationIdentifier = "userLocationViewIdentifier"
     
+    var mapView:MGLMapView!
+    var destinationPin: MGLPointAnnotation = MGLPointAnnotation()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -25,15 +27,33 @@ class MapView: UIView {
     
 }
 
+//MARK:
+extension MapView {
+    func addPin( _ place: Place) {
+        guard let lat = place.latitude,
+            let long = place.longitude else {
+                return
+        }
+        
+        destinationPin.coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
+        destinationPin.title = "Destination"
+        destinationPin.subtitle = place.longName
+
+        mapView.addAnnotation(destinationPin)
+        mapView.setCenter(destinationPin.coordinate, zoomLevel: 16, animated: true)
+    }
+}
+
 //MARK: MapBox
 extension MapView: MGLMapViewDelegate {
     
     fileprivate func initMap() {
-        let mapView = MGLMapView(frame: self.frame)
+        mapView = MGLMapView(frame: self.frame)
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         mapView.delegate = self
         mapView.userTrackingMode = .follow
         addSubview(mapView)
+        
     }
     
     //Customise current user location view
@@ -51,7 +71,11 @@ extension MapView: MGLMapViewDelegate {
 
         }
         return userLocationAnnotationView
-        
+    }
+    
+    func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
+        return true
     }
 }
+
 
