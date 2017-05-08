@@ -7,7 +7,9 @@ target 'TestCP' do
 
   # Pods for TestCP
   pod 'Mapbox-iOS-SDK'
-  
+  pod 'Cartography'
+
+
   target 'TestCPTests' do
     inherit! :search_paths
     # Pods for testing

@@ -10,13 +10,15 @@
 		5A412563779761AA1F34D7EC /* Pods_TestCPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 054F03271C15C1AA0AC3C3DC /* Pods_TestCPTests.framework */; };
 		9895B0E4DA27F4CFA80591DD /* Pods_TestCP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A34B2501304EEC99381652A /* Pods_TestCP.framework */; };
 		F9248ABB1EBDFAF30089AFAA /* TestCPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9248ABA1EBDFAF30089AFAA /* TestCPTests.swift */; };
-		F95C90E41EBDFC3B00A8FAED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C90DB1EBDFC3B00A8FAED /* AppDelegate.swift */; };
-		F95C90E51EBDFC3B00A8FAED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F95C90DC1EBDFC3B00A8FAED /* Assets.xcassets */; };
-		F95C90E61EBDFC3B00A8FAED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F95C90DD1EBDFC3B00A8FAED /* LaunchScreen.storyboard */; };
-		F95C90E71EBDFC3B00A8FAED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F95C90DF1EBDFC3B00A8FAED /* Main.storyboard */; };
 		F95C90ED1EBE00B200A8FAED /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C90EC1EBE00B200A8FAED /* MapViewController.swift */; };
 		F95C90F11EBE06EE00A8FAED /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C90F01EBE06EE00A8FAED /* MapView.swift */; };
 		F95C90F31EBF66AB00A8FAED /* UserLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C90F21EBF66AB00A8FAED /* UserLocationView.swift */; };
+		F95C90FC1EC0712900A8FAED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C90F51EC0712900A8FAED /* AppDelegate.swift */; };
+		F95C90FD1EC0712900A8FAED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F95C90F61EC0712900A8FAED /* Assets.xcassets */; };
+		F95C90FE1EC0712900A8FAED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F95C90F71EC0712900A8FAED /* LaunchScreen.storyboard */; };
+		F95C90FF1EC0712900A8FAED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F95C90F91EC0712900A8FAED /* Main.storyboard */; };
+		F95C91001EC0712900A8FAED /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F95C90FB1EC0712900A8FAED /* Info.plist */; };
+		F95C91031EC0716D00A8FAED /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95C91021EC0716D00A8FAED /* SearchTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,14 +42,15 @@
 		F9248AB61EBDFAF30089AFAA /* TestCPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9248ABA1EBDFAF30089AFAA /* TestCPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCPTests.swift; sourceTree = "<group>"; };
 		F9248ABC1EBDFAF30089AFAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F95C90DB1EBDFC3B00A8FAED /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F95C90DC1EBDFC3B00A8FAED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F95C90DE1EBDFC3B00A8FAED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F95C90E01EBDFC3B00A8FAED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F95C90E11EBDFC3B00A8FAED /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F95C90EC1EBE00B200A8FAED /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F95C90F01EBE06EE00A8FAED /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		F95C90F21EBF66AB00A8FAED /* UserLocationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocationView.swift; sourceTree = "<group>"; };
+		F95C90F51EC0712900A8FAED /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F95C90F61EC0712900A8FAED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F95C90F81EC0712900A8FAED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F95C90FA1EC0712900A8FAED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F95C90FB1EC0712900A8FAED /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F95C91021EC0716D00A8FAED /* SearchTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,22 +142,11 @@
 		F95C90D91EBDFC3B00A8FAED /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				F95C91011EC0715100A8FAED /* Shared */,
+				F95C90F41EC0712900A8FAED /* Main */,
 				F95C90E91EBE006300A8FAED /* MapView */,
-				F95C90DA1EBDFC3B00A8FAED /* Shared */,
 			);
 			path = Application;
-			sourceTree = "<group>";
-		};
-		F95C90DA1EBDFC3B00A8FAED /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				F95C90DB1EBDFC3B00A8FAED /* AppDelegate.swift */,
-				F95C90DC1EBDFC3B00A8FAED /* Assets.xcassets */,
-				F95C90DD1EBDFC3B00A8FAED /* LaunchScreen.storyboard */,
-				F95C90DF1EBDFC3B00A8FAED /* Main.storyboard */,
-				F95C90E11EBDFC3B00A8FAED /* Info.plist */,
-			);
-			path = Shared;
 			sourceTree = "<group>";
 		};
 		F95C90E21EBDFC3B00A8FAED /* Libs */ = {
@@ -179,6 +171,26 @@
 				F95C90F21EBF66AB00A8FAED /* UserLocationView.swift */,
 			);
 			path = MapView;
+			sourceTree = "<group>";
+		};
+		F95C90F41EC0712900A8FAED /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F95C90F51EC0712900A8FAED /* AppDelegate.swift */,
+				F95C90F61EC0712900A8FAED /* Assets.xcassets */,
+				F95C90F71EC0712900A8FAED /* LaunchScreen.storyboard */,
+				F95C90F91EC0712900A8FAED /* Main.storyboard */,
+				F95C90FB1EC0712900A8FAED /* Info.plist */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F95C91011EC0715100A8FAED /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F95C91021EC0716D00A8FAED /* SearchTextField.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		F9D7086D341B9DE59EB95B78 /* Frameworks */ = {
@@ -281,9 +293,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F95C90E71EBDFC3B00A8FAED /* Main.storyboard in Resources */,
-				F95C90E51EBDFC3B00A8FAED /* Assets.xcassets in Resources */,
-				F95C90E61EBDFC3B00A8FAED /* LaunchScreen.storyboard in Resources */,
+				F95C90FD1EC0712900A8FAED /* Assets.xcassets in Resources */,
+				F95C90FF1EC0712900A8FAED /* Main.storyboard in Resources */,
+				F95C90FE1EC0712900A8FAED /* LaunchScreen.storyboard in Resources */,
+				F95C91001EC0712900A8FAED /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,9 +407,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F95C91031EC0716D00A8FAED /* SearchTextField.swift in Sources */,
 				F95C90F31EBF66AB00A8FAED /* UserLocationView.swift in Sources */,
-				F95C90E41EBDFC3B00A8FAED /* AppDelegate.swift in Sources */,
 				F95C90F11EBE06EE00A8FAED /* MapView.swift in Sources */,
+				F95C90FC1EC0712900A8FAED /* AppDelegate.swift in Sources */,
 				F95C90ED1EBE00B200A8FAED /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,18 +434,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F95C90DD1EBDFC3B00A8FAED /* LaunchScreen.storyboard */ = {
+		F95C90F71EC0712900A8FAED /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F95C90DE1EBDFC3B00A8FAED /* Base */,
+				F95C90F81EC0712900A8FAED /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		F95C90DF1EBDFC3B00A8FAED /* Main.storyboard */ = {
+		F95C90F91EC0712900A8FAED /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F95C90E01EBDFC3B00A8FAED /* Base */,
+				F95C90FA1EC0712900A8FAED /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -538,7 +552,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X4S5YE2LML;
-				INFOPLIST_FILE = "$(SRCROOT)/TestCP/Application/Shared/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TestCP/Application/Main/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chlebta.TestCP;
@@ -553,7 +567,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X4S5YE2LML;
-				INFOPLIST_FILE = "$(SRCROOT)/TestCP/Application/Shared/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TestCP/Application/Main/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chlebta.TestCP;

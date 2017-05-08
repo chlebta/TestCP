@@ -10,6 +10,9 @@ import UIKit
 import Mapbox
 
 class MapViewController: UIViewController {
+   
+    
+    @IBOutlet weak var searchTextField: SearchTextField!
 
     var mapView: MapView!
     
@@ -17,7 +20,7 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
 
         mapView = MapView(frame: view.bounds)
-        view.addSubview(mapView)
+        view.insertSubview(mapView, belowSubview: searchTextField)
     }
 
 

@@ -1,12 +1,15 @@
 PODS:
+  - Cartography (1.1.0)
   - Mapbox-iOS-SDK (3.5.3)
 
 DEPENDENCIES:
+  - Cartography
   - Mapbox-iOS-SDK
 
 SPEC CHECKSUMS:
+  Cartography: 0538ccb4044acbbda2266335fc58cb4228794d90
   Mapbox-iOS-SDK: 742c77226b2f1e881844319d23d9f1aa2fb042bb
 
-PODFILE CHECKSUM: 14c8698e9db2b042c68fad20ee56b651cb7c8eb0
+PODFILE CHECKSUM: 11f1c2cf5c20d5dc2f0d1564b7c7399a148e6c00
 
 COCOAPODS: 1.2.1
